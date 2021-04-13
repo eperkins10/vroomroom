@@ -25,12 +25,6 @@ struct ContentView: View {
     
     var body: some View {
         
-//        Button("") {
-//            showingAlert = true
-//        }
-//        .alert(isPresented: $showingAlert) {
-//            Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
-//        }
         
         NavigationView{
             ZStack{
@@ -39,7 +33,7 @@ struct ContentView: View {
                         showingAlert = true
                     }
                     .alert(isPresented: $showingAlert) {
-                        Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
+                        Alert(title: Text("Wait! Before you play"), message: Text("Please turn your phone off of silent mode"), dismissButton: .default(Text("Got it!")))
                     }
                     
                     List {
