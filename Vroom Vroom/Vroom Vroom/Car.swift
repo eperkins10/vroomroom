@@ -82,7 +82,9 @@ public class Car {
                           Car(carModel: "GT2RS", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .porshe, urlName: "porsche_911_gt2rs"),
                           Car(carModel: "GT3RS", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .porshe, urlName: "porsche_911_gt3rs"),
                           Car(carModel: "Aventador", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 12, manufacturer: .lamborghini, urlName: "lamborghini_aventador"),
-                          Car(carModel: "Huracan", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .lamborghini, urlName: "lamborghini_huracan")
+                          Car(carModel: "Huracan", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .lamborghini, urlName: "lamborghini_huracan"),
+                          Car(carModel: "Regera", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .koenigsegg, urlName: "koenigsegg_regera"),
+                          Car(carModel: "CCX", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .koenigsegg, urlName: "koenigsegg_ccx")
     ]
     
     
