@@ -45,7 +45,7 @@ struct ResultView: View {
             Color(isCorrect ? .green : .red)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing:20) {
-                Text(isCorrect ? "Correct" : "incorrect")
+                Text(isCorrect ? "Correct" : "Incorrect")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 Button("Next") {
