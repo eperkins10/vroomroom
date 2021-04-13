@@ -11,6 +11,8 @@
 		0B28B44B262582EE00D6611F /* lamborghini_huracan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */; };
 		0BF87E3D2626321C00DB205B /* koenigsegg_regera.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BF87E3C2626321C00DB205B /* koenigsegg_regera.mp3 */; };
 		0BF87E452626339700DB205B /* koenigsegg_ccx.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BF87E442626339700DB205B /* koenigsegg_ccx.mp3 */; };
+		0BF87E4A2626354000DB205B /* astonmartin_vulcan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BF87E492626354000DB205B /* astonmartin_vulcan.mp3 */; };
+		0BF87E4F2626366800DB205B /* mclaren_720s.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0BF87E4E2626366800DB205B /* mclaren_720s.mp3 */; };
 		7367DD2B25EF776F00966689 /* ferarri_458.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD2A25EF776F00966689 /* ferarri_458.mp3 */; };
 		7367DD3825EF778800966689 /* nissan_r35_gtr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD2F25EF778800966689 /* nissan_r35_gtr.mp3 */; };
 		7367DD3925EF778800966689 /* porshe_carrera_gt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD3025EF778800966689 /* porshe_carrera_gt.mp3 */; };
@@ -63,6 +65,8 @@
 		0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lamborghini_huracan.mp3; sourceTree = "<group>"; };
 		0BF87E3C2626321C00DB205B /* koenigsegg_regera.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = koenigsegg_regera.mp3; sourceTree = "<group>"; };
 		0BF87E442626339700DB205B /* koenigsegg_ccx.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = koenigsegg_ccx.mp3; sourceTree = "<group>"; };
+		0BF87E492626354000DB205B /* astonmartin_vulcan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = astonmartin_vulcan.mp3; sourceTree = "<group>"; };
+		0BF87E4E2626366800DB205B /* mclaren_720s.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mclaren_720s.mp3; sourceTree = "<group>"; };
 		7367DD2A25EF776F00966689 /* ferarri_458.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ferarri_458.mp3; sourceTree = "<group>"; };
 		7367DD2F25EF778800966689 /* nissan_r35_gtr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nissan_r35_gtr.mp3; sourceTree = "<group>"; };
 		7367DD3025EF778800966689 /* porshe_carrera_gt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porshe_carrera_gt.mp3; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 		73D7F39725BC9C84001161A6 /* Car Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				0BF87E4E2626366800DB205B /* mclaren_720s.mp3 */,
+				0BF87E492626354000DB205B /* astonmartin_vulcan.mp3 */,
 				0BF87E442626339700DB205B /* koenigsegg_ccx.mp3 */,
 				0BF87E3C2626321C00DB205B /* koenigsegg_regera.mp3 */,
 				0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */,
@@ -328,11 +334,13 @@
 				0BF87E3D2626321C00DB205B /* koenigsegg_regera.mp3 in Resources */,
 				7367DD3C25EF778800966689 /* dodge_hellcat.mp3 in Resources */,
 				7367DD3A25EF778800966689 /* koenigsegg_agera_r.mp3 in Resources */,
+				0BF87E4A2626354000DB205B /* astonmartin_vulcan.mp3 in Resources */,
 				73D7F36D25BC9A2F001161A6 /* Preview Assets.xcassets in Resources */,
 				7367DD3B25EF778800966689 /* mclaren_p1.mp3 in Resources */,
 				7399F56526256E4F00142E63 /* ford_f250_powerstroke_60.mp3 in Resources */,
 				7367DD3F25EF778800966689 /* lexus_lfa.mp3 in Resources */,
 				0BF87E452626339700DB205B /* koenigsegg_ccx.mp3 in Resources */,
+				0BF87E4F2626366800DB205B /* mclaren_720s.mp3 in Resources */,
 				7399F56226256E4F00142E63 /* ford_f150_ecoboost.mp3 in Resources */,
 				7367DD3825EF778800966689 /* nissan_r35_gtr.mp3 in Resources */,
 				73D7F36A25BC9A2F001161A6 /* Assets.xcassets in Resources */,
