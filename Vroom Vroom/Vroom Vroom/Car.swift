@@ -71,8 +71,7 @@ public class Car {
                           Car(carModel: "LFA", carOrigin: .japanese, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .lexus, urlName: "lexus_lfa"),
                           Car(carModel: "P1", carOrigin: .uk, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .mclaren, urlName: "mclaren_p1"),
                           Car(carModel: "GTR", carOrigin: .japanese, driveType: .fourWheelDrive, cylinderCount: 6, manufacturer: .nissan, urlName: "nissan_r35_gtr"),
-                          Car(carModel: "Carrera GT", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .porshe, urlName: "porshe_garrera_gt"),
-                          
+                          Car(carModel: "Carrera GT", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .porshe, urlName: "porshe_carrera_gt"),
                           Car(carModel: "Silverado LS", carOrigin: .american, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .chevrolet, urlName: "chevrolet_ls_silverado_48l"),
                           Car(carModel: "Silverado LBZ", carOrigin: .american, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .chevrolet, urlName: "chevrolet_silverado_lbz_duramax"),
                           Car(carModel: "F90", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .bmw, urlName: "f90_bmw_m5"),
