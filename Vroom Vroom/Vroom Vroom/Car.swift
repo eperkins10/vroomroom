@@ -36,6 +36,7 @@ public enum Manufacturer : String {
     case mercedezbenz = "Mercedez Benz"
     case nissan = "Nissan"
     case porshe = "Porshe"
+    
 }
 
 public class Car {
@@ -67,7 +68,6 @@ public class Car {
                           Car(carModel: "Hellcat", carOrigin: .american, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .dodge, urlName: "dodge_hellcat"),
                           Car(carModel: "458", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .ferarri, urlName: "ferarri_458"),
                           Car(carModel: "Agera RS", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .koenigsegg, urlName: "koenigsegg_agera_r"),
-                          //                   Car(carModel: "Aventador", carOrigin: .italian, driveType: .fourWheelDrive, cylinderCount: 12, manufacturer: .Lamborghini, urlName: "Lamborghini Aventador"),
                           Car(carModel: "LFA", carOrigin: .japanese, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .lexus, urlName: "lexus_lfa"),
                           Car(carModel: "P1", carOrigin: .uk, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .mclaren, urlName: "mclaren_p1"),
                           Car(carModel: "GTR", carOrigin: .japanese, driveType: .fourWheelDrive, cylinderCount: 6, manufacturer: .nissan, urlName: "nissan_r35_gtr"),
@@ -80,7 +80,9 @@ public class Car {
                           Car(carModel: "Mustang GT", carOrigin: .american, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .ford, urlName: "ford_mustang_gt"),
                           Car(carModel: "E63 AMG", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .mercedezbenz, urlName: "mercedez_benz_e63_amg"),
                           Car(carModel: "GT2RS", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .porshe, urlName: "porsche_911_gt2rs"),
-                          Car(carModel: "GT3RS", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .porshe, urlName: "porsche_911_gt3rs")
+                          Car(carModel: "GT3RS", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .porshe, urlName: "porsche_911_gt3rs"),
+                          Car(carModel: "Aventador", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 12, manufacturer: .lamborghini, urlName: "lamborghini_aventador"),
+                          Car(carModel: "Huracan", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .lamborghini, urlName: "lamborghini_huracan")
     ]
     
     
