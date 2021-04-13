@@ -129,6 +129,7 @@ struct Quiz: View {
                     HStack {
                         Text("Score: \(userScore) |")
                             .font(.largeTitle)
+                            .foregroundColor(.black)
                         Button("Skip"){
                             self.askQuestion()
                             self.soundManager.stopSound()
@@ -140,6 +141,7 @@ struct Quiz: View {
             }
         }.navigationBarTitle(carType).onAppear(perform: {
             randomize()
+                
         })
     }
     
