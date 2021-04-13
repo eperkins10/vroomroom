@@ -25,17 +25,22 @@ struct ContentView: View {
     
     var body: some View {
         
-        Button("") {
-            showingAlert = true
-        }
-        .alert(isPresented: $showingAlert) {
-            Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
-        }
+//        Button("") {
+//            showingAlert = true
+//        }
+//        .alert(isPresented: $showingAlert) {
+//            Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
+//        }
         
         NavigationView{
             ZStack{
                 VStack{
-                    
+                    Button("") {
+                        showingAlert = true
+                    }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
+                    }
                     
                     List {
                         ForEach(self.originOfCars.sorted(), id: \.self) { option in
