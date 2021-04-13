@@ -16,6 +16,15 @@
 		7367DD3D25EF778800966689 /* audi_s4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD3425EF778800966689 /* audi_s4.mp3 */; };
 		7367DD3E25EF778800966689 /* audi_rs7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD3525EF778800966689 /* audi_rs7.mp3 */; };
 		7367DD3F25EF778800966689 /* lexus_lfa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD3625EF778800966689 /* lexus_lfa.mp3 */; };
+		7399F55F26256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55626256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 */; };
+		7399F56026256E4F00142E63 /* porsche_911_gt3rs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55726256E4F00142E63 /* porsche_911_gt3rs.mp3 */; };
+		7399F56126256E4F00142E63 /* f90_bmw_m5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55826256E4F00142E63 /* f90_bmw_m5.mp3 */; };
+		7399F56226256E4F00142E63 /* ford_f150_ecoboost.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55926256E4F00142E63 /* ford_f150_ecoboost.mp3 */; };
+		7399F56326256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55A26256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 */; };
+		7399F56426256E4F00142E63 /* ford_mustang_gt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55B26256E4F00142E63 /* ford_mustang_gt.mp3 */; };
+		7399F56526256E4F00142E63 /* ford_f250_powerstroke_60.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55C26256E4F00142E63 /* ford_f250_powerstroke_60.mp3 */; };
+		7399F56626256E4F00142E63 /* porsche_911_gt2rs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55D26256E4F00142E63 /* porsche_911_gt2rs.mp3 */; };
+		7399F56726256E4F00142E63 /* mercedez_benz_e63_amg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55E26256E4F00142E63 /* mercedez_benz_e63_amg.mp3 */; };
 		73D7F36425BC9A2B001161A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36325BC9A2B001161A6 /* AppDelegate.swift */; };
 		73D7F36625BC9A2B001161A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36525BC9A2B001161A6 /* SceneDelegate.swift */; };
 		73D7F36825BC9A2B001161A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36725BC9A2B001161A6 /* ContentView.swift */; };
@@ -55,6 +64,15 @@
 		7367DD3425EF778800966689 /* audi_s4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audi_s4.mp3; sourceTree = "<group>"; };
 		7367DD3525EF778800966689 /* audi_rs7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audi_rs7.mp3; sourceTree = "<group>"; };
 		7367DD3625EF778800966689 /* lexus_lfa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lexus_lfa.mp3; sourceTree = "<group>"; };
+		7399F55626256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chevrolet_silverado_lbz_duramax.mp3; sourceTree = "<group>"; };
+		7399F55726256E4F00142E63 /* porsche_911_gt3rs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porsche_911_gt3rs.mp3; sourceTree = "<group>"; };
+		7399F55826256E4F00142E63 /* f90_bmw_m5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = f90_bmw_m5.mp3; sourceTree = "<group>"; };
+		7399F55926256E4F00142E63 /* ford_f150_ecoboost.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ford_f150_ecoboost.mp3; sourceTree = "<group>"; };
+		7399F55A26256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chevrolet_ls_silverado_48l.mp3; sourceTree = "<group>"; };
+		7399F55B26256E4F00142E63 /* ford_mustang_gt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ford_mustang_gt.mp3; sourceTree = "<group>"; };
+		7399F55C26256E4F00142E63 /* ford_f250_powerstroke_60.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ford_f250_powerstroke_60.mp3; sourceTree = "<group>"; };
+		7399F55D26256E4F00142E63 /* porsche_911_gt2rs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porsche_911_gt2rs.mp3; sourceTree = "<group>"; };
+		7399F55E26256E4F00142E63 /* mercedez_benz_e63_amg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mercedez_benz_e63_amg.mp3; sourceTree = "<group>"; };
 		73D7F36025BC9A2B001161A6 /* Vroom Vroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vroom Vroom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7F36325BC9A2B001161A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7F36525BC9A2B001161A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +182,15 @@
 		73D7F39725BC9C84001161A6 /* Car Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7399F55A26256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 */,
+				7399F55626256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 */,
+				7399F55826256E4F00142E63 /* f90_bmw_m5.mp3 */,
+				7399F55926256E4F00142E63 /* ford_f150_ecoboost.mp3 */,
+				7399F55C26256E4F00142E63 /* ford_f250_powerstroke_60.mp3 */,
+				7399F55B26256E4F00142E63 /* ford_mustang_gt.mp3 */,
+				7399F55E26256E4F00142E63 /* mercedez_benz_e63_amg.mp3 */,
+				7399F55D26256E4F00142E63 /* porsche_911_gt2rs.mp3 */,
+				7399F55726256E4F00142E63 /* porsche_911_gt3rs.mp3 */,
 				7367DD3525EF778800966689 /* audi_rs7.mp3 */,
 				7367DD3425EF778800966689 /* audi_s4.mp3 */,
 				7367DD3325EF778800966689 /* dodge_hellcat.mp3 */,
@@ -281,18 +308,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7399F55F26256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 in Resources */,
 				73D7F37025BC9A2F001161A6 /* LaunchScreen.storyboard in Resources */,
+				7399F56626256E4F00142E63 /* porsche_911_gt2rs.mp3 in Resources */,
 				7367DD3C25EF778800966689 /* dodge_hellcat.mp3 in Resources */,
 				7367DD3A25EF778800966689 /* koenigsegg_agera_r.mp3 in Resources */,
 				73D7F36D25BC9A2F001161A6 /* Preview Assets.xcassets in Resources */,
 				7367DD3B25EF778800966689 /* mclaren_p1.mp3 in Resources */,
+				7399F56526256E4F00142E63 /* ford_f250_powerstroke_60.mp3 in Resources */,
 				7367DD3F25EF778800966689 /* lexus_lfa.mp3 in Resources */,
+				7399F56226256E4F00142E63 /* ford_f150_ecoboost.mp3 in Resources */,
 				7367DD3825EF778800966689 /* nissan_r35_gtr.mp3 in Resources */,
 				73D7F36A25BC9A2F001161A6 /* Assets.xcassets in Resources */,
+				7399F56726256E4F00142E63 /* mercedez_benz_e63_amg.mp3 in Resources */,
+				7399F56326256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 in Resources */,
 				7367DD3D25EF778800966689 /* audi_s4.mp3 in Resources */,
 				7367DD3E25EF778800966689 /* audi_rs7.mp3 in Resources */,
 				7367DD2B25EF776F00966689 /* ferarri_458.mp3 in Resources */,
+				7399F56126256E4F00142E63 /* f90_bmw_m5.mp3 in Resources */,
 				7367DD3925EF778800966689 /* porshe_garrera_gt.mp3 in Resources */,
+				7399F56426256E4F00142E63 /* ford_mustang_gt.mp3 in Resources */,
+				7399F56026256E4F00142E63 /* porsche_911_gt3rs.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
