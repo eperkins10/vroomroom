@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B28B446262580F400D6611F /* lamborghini_aventador.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B28B445262580F300D6611F /* lamborghini_aventador.mp3 */; };
+		0B28B44B262582EE00D6611F /* lamborghini_huracan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */; };
 		7367DD2B25EF776F00966689 /* ferarri_458.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD2A25EF776F00966689 /* ferarri_458.mp3 */; };
 		7367DD3825EF778800966689 /* nissan_r35_gtr.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD2F25EF778800966689 /* nissan_r35_gtr.mp3 */; };
 		7367DD3925EF778800966689 /* porshe_carrera_gt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7367DD3025EF778800966689 /* porshe_carrera_gt.mp3 */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B28B445262580F300D6611F /* lamborghini_aventador.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lamborghini_aventador.mp3; sourceTree = "<group>"; };
+		0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lamborghini_huracan.mp3; sourceTree = "<group>"; };
 		7367DD2A25EF776F00966689 /* ferarri_458.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ferarri_458.mp3; sourceTree = "<group>"; };
 		7367DD2F25EF778800966689 /* nissan_r35_gtr.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nissan_r35_gtr.mp3; sourceTree = "<group>"; };
 		7367DD3025EF778800966689 /* porshe_carrera_gt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porshe_carrera_gt.mp3; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 		73D7F39725BC9C84001161A6 /* Car Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				0B28B44A262582EE00D6611F /* lamborghini_huracan.mp3 */,
+				0B28B445262580F300D6611F /* lamborghini_aventador.mp3 */,
 				7399F55A26256E4F00142E63 /* chevrolet_ls_silverado_48l.mp3 */,
 				7399F55626256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 */,
 				7399F55826256E4F00142E63 /* f90_bmw_m5.mp3 */,
@@ -310,6 +316,8 @@
 			files = (
 				7399F55F26256E4F00142E63 /* chevrolet_silverado_lbz_duramax.mp3 in Resources */,
 				73D7F37025BC9A2F001161A6 /* LaunchScreen.storyboard in Resources */,
+				0B28B446262580F400D6611F /* lamborghini_aventador.mp3 in Resources */,
+				0B28B44B262582EE00D6611F /* lamborghini_huracan.mp3 in Resources */,
 				7399F56626256E4F00142E63 /* porsche_911_gt2rs.mp3 in Resources */,
 				7367DD3C25EF778800966689 /* dodge_hellcat.mp3 in Resources */,
 				7367DD3A25EF778800966689 /* koenigsegg_agera_r.mp3 in Resources */,
