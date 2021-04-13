@@ -45,7 +45,7 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
-            } .navigationBarTitle("vroom vroom")
+            } .navigationBarTitle("Vroom Vroom")
         }
         
     }
