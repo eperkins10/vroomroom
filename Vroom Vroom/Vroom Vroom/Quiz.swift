@@ -19,7 +19,7 @@ class SoundManager {
     
     func playSoundWith(soundURL:URL) {
         do {
-            print("Playing sound at path: \(soundURL.absoluteString)")
+//            print("Playing sound at path: \(soundURL.absoluteString)")
             soundPlayer = try AVAudioPlayer.init(contentsOf: soundURL)
             soundPlayer.play()
         } catch  {
@@ -80,8 +80,8 @@ struct Quiz: View {
     
     func playSound(withIndex:Int) {
         
-        if let path = Bundle.main.path(forResource: cars[withIndex], ofType: "mp3") {
-            print("Path of exhaust: \(path)")
+        if let path = Bundle.main.path(forResource: availableCarList[withIndex].urlName, ofType: "mp3") {
+//            print("Path of exhaust: \(path)")
             let url = URL(fileURLWithPath: path)
             soundManager.playSoundWith(soundURL: url)
         }
@@ -91,34 +91,16 @@ struct Quiz: View {
     
     @State private var userScore = 0
     @State private var didGetCorrectAnswer = false
-    @State public var correctAnswer = Int.random(in: 0...1)
+    @State public var correctAnswer = 0
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State var isPlaying : Bool = false
     
+    var carType:String
     
-    //    public var carList
+    @State private var choices:[Int] = []
     
-    @State public  var CarList = [Car(carModel: "RS7", carOrigin: .german, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .Audi, urlName: "Audi RS7"),
-                                  Car(carModel: "S4", carOrigin: .german, driveType: .fourWheelDrive, cylinderCount: 6, manufacturer: .Audi, urlName: "Audi S4"),
-                                  Car(carModel: "Hellcat", carOrigin: .american, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .Dodge, urlName: "Dodge Hellcat"),
-                                  Car(carModel: "458", carOrigin: .italian, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .Ferarri, urlName: "Ferarri 458"),
-                                  Car(carModel: "Agera RS", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .Koenigsegg, urlName: "Koenigsegg Agera R"),
-                                  Car(carModel: "Aventador", carOrigin: .italian, driveType: .fourWheelDrive, cylinderCount: 12, manufacturer: .Lamborghini, urlName: "Lamborghini Aventador"),
-                                  Car(carModel: "LFA", carOrigin: .japanese, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .Lexus, urlName: "Lexus LFA"),
-                                  Car(carModel: "P1", carOrigin: .UK, driveType: .fourWheelDrive, cylinderCount: 8, manufacturer: .Mclaren, urlName: "Mclaren P1"),
-                                  Car(carModel: "GTR", carOrigin: .japanese, driveType: .fourWheelDrive, cylinderCount: 6, manufacturer: .Nissan, urlName: "Nissan R35 GT-R"),
-                                  Car(carModel: "Carrera GT", carOrigin: .german, driveType: .twoWheelDrive, cylinderCount: 10, manufacturer: .Porshe, urlName: "Porshe Carrera GT")
-                                  
-    ]
-   
-    
-    
-    @State public var cars = ["Audi RS7", "Lamborghini Aventador", "Ferarri 458", "Audi S4", "Dodge Hellcat", "Porshe Carrera GT", "Lexus LFA", "Nissan R35 GT-R", "Mclaren P1", "Koenigsegg Agera R"
-    ].shuffled()
-    
-    var carTypes:String
-    
+    var availableCarList:[Car]
     
     var body: some View {
         NavigationView {
@@ -162,14 +144,14 @@ struct Quiz: View {
                     
                     Spacer()
                     
-                    ForEach(0 ..< 3) { number in
+                    ForEach(choices, id: \.self) { number in
                         Button(action: {
                             self.exhaustTapped(number)
                             self.askQuestion()
                             self.soundManager.stopSound()
                         }) {
                             
-                            Text(self.cars[number])
+                            Text(self.availableCarList[number].makeAndModel)
                                 .foregroundColor(.black)
                                 .fontWeight(.black)
                                 .baselineOffset(50)
@@ -206,13 +188,25 @@ struct Quiz: View {
                     }
                 }
             }
-        }.navigationBarTitle(carTypes)
+        }.navigationBarTitle(carType).onAppear(perform: {
+            randomize()
+        })
         
         //        .alert(isPresented: $showingScore) {
         //            Alert(title: Text(scoreTitle), message: Text("Your score is \(UserScore)"), dismissButton: .default(Text("Continue")) {
         //                self.askQuestion()
         //                })
         //        }
+    }
+    
+    func randomize() {
+        // Get our available choices
+        getChoices()
+        print("Avalable Choices: \(choices)")
+        
+        // Grab one of the choices that will be the correct answer
+        correctAnswer = choices.randomElement() ?? 0
+        print("Correct Answer: \(correctAnswer)")
     }
     
     func exhaustTapped(_ number: Int) {
@@ -236,14 +230,38 @@ struct Quiz: View {
     }
     
     public func askQuestion() {
-        cars.shuffle()
-        correctAnswer = Int.random(in: 0...1)
+        randomize()
+    }
+    
+    private func getChoices()  {
+        var done = false
+        choices.removeAll(keepingCapacity: false)
+        var newChoices:[Int] = []
+        // Loop until we fill our array
+        while !done {
+            // Grab a random index from 0 to our max car list count (minus 1)
+            let index = Int.random(in: 0...availableCarList.count-1)
+            
+            // See if this index is already in our choice list
+            if !newChoices.contains(index) {
+                // Not in our choice list so add it
+                newChoices.append(index)
+            }
+            // Once we finally have three available choices, bail
+            if newChoices.count == 3 {
+                done = true
+            }
+        }
+        choices = newChoices
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Quiz(carTypes: "Default")
+        Group {
+            Quiz(carType: "American", availableCarList: Car.CarList)
+        }
     }
 }
 

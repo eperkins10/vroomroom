@@ -21,8 +21,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var defaultOption = 0
-    
-    public let typesOfCars = ["American", "German", "japanese"]
+    // Get a list of car
+    let originOfCars: [String] = ["All"] + Origin.allCases.map { $0.rawValue }
     
     var body: some View {
         
@@ -30,23 +30,39 @@ struct ContentView: View {
         NavigationView{
             ZStack{
                 VStack{
-                    Spacer()
                     
-                    List(typesOfCars, id:\.self) { carTypes in
-                        
-                        NavigationLink(destination:
-                        Quiz(carTypes: carTypes)) {
-                            Text(carTypes)
-                                .font(.title)
-                                .foregroundColor(Color.black)
-                                
-                                .frame(width: 300.0, height: 50.0)
-                            
-                            
+                    
+                    List {
+                        ForEach(self.originOfCars.sorted(), id: \.self) { option in
+                            NavigationLink(destination:
+                                            Quiz(carType: option, availableCarList: Car.CarList.filter {(($0.carOrigin == Origin(rawValue: option)) || (option == "All")) } )) {
+                                Text(option)
+                                    .bold()
+                                    .font(.title)
+                                    .foregroundColor(.black)
+                                    .frame(width: 300.0, height: 70)
+                            }
                         }
                     }
-                    //                    .colorMultiply(Color.gray)
-                    Spacer()
+                    
+                    
+                    //                    Spacer()
+                    //
+                    //                    List(typesOfCars, id:\.self) { carTypes in
+                    //
+                    //                        NavigationLink(destination:
+                    //                        Quiz(carTypes: carTypes)) {
+                    //                            Text(carTypes)
+                    //                                .font(.title)
+                    //                                .foregroundColor(Color.black)
+                    //
+                    //                                .frame(width: 300.0, height: 50.0)
+                    //
+                    //
+                    //                        }
+                    //                    }
+                    //                    //                    .colorMultiply(Color.gray)
+                    //                    Spacer()
                 }
                 
             } .navigationBarTitle("vroom vroom")
@@ -54,7 +70,7 @@ struct ContentView: View {
             
             
         }
-         
+        
     }
     
 }
@@ -63,5 +79,6 @@ struct ContentView: View {
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
