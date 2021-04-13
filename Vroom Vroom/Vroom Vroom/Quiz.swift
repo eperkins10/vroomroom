@@ -143,6 +143,7 @@ struct Quiz: View {
             randomize()
                 
         })
+        .foregroundColor(.black)
     }
     
     // MARK: Quiz Functions
