@@ -6,11 +6,12 @@
 //  Copyright © 2021 Tanner Perry. All rights reserved.
 //
 
+// MARK: Imports
 import Foundation
-
 import SwiftUI
 import AVFoundation
 
+// MARK: SoundManager
 class SoundManager {
     var soundPlayer:AVAudioPlayer
     init() {
@@ -32,11 +33,10 @@ class SoundManager {
     }
 }
 
-
-
-
-
+// MARK: Results View
 struct ResultView: View {
+    
+    // MARK: Binding Variables
     @Binding var isCorrect: Bool
     @Binding var showingScore: Bool
     
@@ -48,60 +48,35 @@ struct ResultView: View {
                 Text(isCorrect ? "Correct" : "incorrect")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
-                  
-                
-        
-           
                 Button("Next") {
-                    //                        self.askQuestion()
                     self.showingScore = false
-
                 }
                 .foregroundColor(.black)
-          
                 .font(.title)
-                
-                
             }
         }
     }
 }
 
-
-
-
+// MARK: Quiz View
 struct Quiz: View {
     
+    // MARK: Variables
     var audioPlayer: AVAudioPlayer?
-    
     var soundManager = SoundManager()
+    var carType:String
+    var availableCarList:[Car]
     
-    
-    
-    func playSound(withIndex:Int) {
-        
-        if let path = Bundle.main.path(forResource: availableCarList[withIndex].urlName, ofType: "mp3") {
-//            print("Path of exhaust: \(path)")
-            let url = URL(fileURLWithPath: path)
-            soundManager.playSoundWith(soundURL: url)
-        }
-    }
-    
-    
-    
+    // MARK: State Variables
     @State private var userScore = 0
     @State private var didGetCorrectAnswer = false
     @State public var correctAnswer = 0
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State var isPlaying : Bool = false
-    
-    var carType:String
-    
     @State private var choices:[Int] = []
-    
-    var availableCarList:[Car]
-    
+
+    // MARK: Body
     var body: some View {
         NavigationView {
             ZStack {
@@ -115,31 +90,18 @@ struct Quiz: View {
                             .font(.largeTitle)
                             .foregroundColor(.black)
                             .fontWeight(.black)
-                        
-                        
-                        
-                        
-                        //                    Text(cars[correctAnswer])
-                        //                        .foregroundColor(.white)
-                        //                        .font(.largeTitle)
-                        //                        .fontWeight(.black)
-                        
                         HStack{
-                            
                             Button(action: onPlaySoundClicked) {
                                 Image(systemName: "play.fill").foregroundColor(.black)
                                     .font(.largeTitle)
                                     .frame(width: 62, height: 62)
                             }
-                            
                             Button(action: soundManager.stopSound)  {
                                 Image(systemName: "stop.fill").foregroundColor(.black)
                                     .font(.largeTitle)
                                     .frame(width: 60, height: 60)
                             }
                         }
-                        
-                        
                     }
                     
                     Spacer()
@@ -156,21 +118,9 @@ struct Quiz: View {
                                 .fontWeight(.black)
                                 .baselineOffset(50)
                                 .font(.largeTitle)
-                            
-                            
-                            
-                            
                         }
                         .sheet(isPresented: self.$showingScore){
                             ResultView(isCorrect:self.$didGetCorrectAnswer, showingScore: self.$showingScore)
-//                            Button("Next"){
-//                                self.askQuestion()
-//                                self.soundManager.stopSound()
-//                                self.showingScore = false
-//
-                                    
-                                // }
-                            
                         }
                     }
                     
@@ -191,12 +141,16 @@ struct Quiz: View {
         }.navigationBarTitle(carType).onAppear(perform: {
             randomize()
         })
+    }
+    
+    // MARK: Quiz Functions
+    func playSound(withIndex:Int) {
         
-        //        .alert(isPresented: $showingScore) {
-        //            Alert(title: Text(scoreTitle), message: Text("Your score is \(UserScore)"), dismissButton: .default(Text("Continue")) {
-        //                self.askQuestion()
-        //                })
-        //        }
+        if let path = Bundle.main.path(forResource: availableCarList[withIndex].urlName, ofType: "mp3") {
+//            print("Path of exhaust: \(path)")
+            let url = URL(fileURLWithPath: path)
+            soundManager.playSoundWith(soundURL: url)
+        }
     }
     
     func randomize() {
@@ -217,6 +171,7 @@ struct Quiz: View {
         
     }
     
+    // MARK: Sound Functions
     func onPlaySoundClicked() {
         playSound(withIndex: correctAnswer)
     }
@@ -229,7 +184,7 @@ struct Quiz: View {
         }
     }
     
-    public func askQuestion() {
+    func askQuestion() {
         randomize()
     }
     
@@ -253,10 +208,10 @@ struct Quiz: View {
             }
         }
         choices = newChoices
-        
     }
 }
 
+// MARK: Preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
