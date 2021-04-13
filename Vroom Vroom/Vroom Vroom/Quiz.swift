@@ -217,7 +217,9 @@ struct Quiz: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Quiz(carType: "American", availableCarList: Car.CarList)
+            Quiz(carType: "ALL", availableCarList: Car.CarList)
+            
+            
         }
     }
 }

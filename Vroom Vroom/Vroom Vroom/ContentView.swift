@@ -16,16 +16,21 @@ import SwiftUI
 //  Copyright © 2020 Tanner Perry. All rights reserved.
 //
 
-
-
 struct ContentView: View {
     
     @State private var defaultOption = 0
     // Get a list of car
     let originOfCars: [String] = ["All"] + Origin.allCases.map { $0.rawValue }
+    @State private var showingAlert = true
     
     var body: some View {
         
+        Button("") {
+            showingAlert = true
+        }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Wait! Before you play"), message: Text("Turn phone off of silent"), dismissButton: .default(Text("Got it!")))
+        }
         
         NavigationView{
             ZStack{
@@ -55,7 +60,8 @@ struct ContentView: View {
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-        
+        ForEach(ColorScheme.allCases, id: \.self) {
+                    ContentView().preferredColorScheme($0)
+        }
     }
 }
