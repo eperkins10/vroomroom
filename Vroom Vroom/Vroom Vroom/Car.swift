@@ -33,7 +33,7 @@ public enum Manufacturer : String {
     case lamborghini = "Lamborghini"
     case lexus = "Lexus"
     case mclaren = "Mclaren"
-    case mercedezbenz = "Mercedez Benz"
+    case mercedezbenz = "Mercedez"
     case nissan = "Nissan"
     case porshe = "Porshe"
     case astonMartin = "Aston Martin"

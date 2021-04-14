@@ -62,7 +62,7 @@ struct ContentView: View {
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(ColorScheme.allCases, id: \.self) {
-                    ContentView().preferredColorScheme($0)
+            ContentView().preferredColorScheme($0)
         }
     }
 }

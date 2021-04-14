@@ -20,7 +20,7 @@ class SoundManager {
     
     func playSoundWith(soundURL:URL) {
         do {
-//            print("Playing sound at path: \(soundURL.absoluteString)")
+            //            print("Playing sound at path: \(soundURL.absoluteString)")
             soundPlayer = try AVAudioPlayer.init(contentsOf: soundURL)
             soundPlayer.play()
         } catch  {
@@ -75,7 +75,7 @@ struct Quiz: View {
     @State private var scoreTitle = ""
     @State var isPlaying : Bool = false
     @State private var choices:[Int] = []
-
+    
     // MARK: Body
     var body: some View {
         NavigationView {
@@ -115,7 +115,7 @@ struct Quiz: View {
                             
                             Text(self.availableCarList[number].makeAndModel)
                                 .foregroundColor(.black)
-                                .fontWeight(.black)
+                                
                                 .baselineOffset(50)
                                 .font(.largeTitle)
                         }
@@ -141,7 +141,7 @@ struct Quiz: View {
             }
         }.navigationBarTitle(carType).onAppear(perform: {
             randomize()
-                
+            
         })
         .foregroundColor(.black)
     }
@@ -150,7 +150,7 @@ struct Quiz: View {
     func playSound(withIndex:Int) {
         
         if let path = Bundle.main.path(forResource: availableCarList[withIndex].urlName, ofType: "mp3") {
-//            print("Path of exhaust: \(path)")
+            //            print("Path of exhaust: \(path)")
             let url = URL(fileURLWithPath: path)
             soundManager.playSoundWith(soundURL: url)
         }
