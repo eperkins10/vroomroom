@@ -31,6 +31,7 @@
 		7399F56526256E4F00142E63 /* ford_f250_powerstroke_60.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55C26256E4F00142E63 /* ford_f250_powerstroke_60.mp3 */; };
 		7399F56626256E4F00142E63 /* porsche_911_gt2rs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55D26256E4F00142E63 /* porsche_911_gt2rs.mp3 */; };
 		7399F56726256E4F00142E63 /* mercedez_benz_e63_amg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7399F55E26256E4F00142E63 /* mercedez_benz_e63_amg.mp3 */; };
+		73BDC06D26267BF300F4C861 /* toyota_supra_mk4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73BDC06C26267BF300F4C861 /* toyota_supra_mk4.mp3 */; };
 		73D7F36425BC9A2B001161A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36325BC9A2B001161A6 /* AppDelegate.swift */; };
 		73D7F36625BC9A2B001161A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36525BC9A2B001161A6 /* SceneDelegate.swift */; };
 		73D7F36825BC9A2B001161A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7F36725BC9A2B001161A6 /* ContentView.swift */; };
@@ -85,6 +86,7 @@
 		7399F55C26256E4F00142E63 /* ford_f250_powerstroke_60.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ford_f250_powerstroke_60.mp3; sourceTree = "<group>"; };
 		7399F55D26256E4F00142E63 /* porsche_911_gt2rs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = porsche_911_gt2rs.mp3; sourceTree = "<group>"; };
 		7399F55E26256E4F00142E63 /* mercedez_benz_e63_amg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mercedez_benz_e63_amg.mp3; sourceTree = "<group>"; };
+		73BDC06C26267BF300F4C861 /* toyota_supra_mk4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = toyota_supra_mk4.mp3; sourceTree = "<group>"; };
 		73D7F36025BC9A2B001161A6 /* Vroom Vroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vroom Vroom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7F36325BC9A2B001161A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7F36525BC9A2B001161A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		73D7F39725BC9C84001161A6 /* Car Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				73BDC06C26267BF300F4C861 /* toyota_supra_mk4.mp3 */,
 				0BF87E4E2626366800DB205B /* mclaren_720s.mp3 */,
 				0BF87E492626354000DB205B /* astonmartin_vulcan.mp3 */,
 				0BF87E442626339700DB205B /* koenigsegg_ccx.mp3 */,
@@ -333,6 +336,7 @@
 				7399F56626256E4F00142E63 /* porsche_911_gt2rs.mp3 in Resources */,
 				0BF87E3D2626321C00DB205B /* koenigsegg_regera.mp3 in Resources */,
 				7367DD3C25EF778800966689 /* dodge_hellcat.mp3 in Resources */,
+				73BDC06D26267BF300F4C861 /* toyota_supra_mk4.mp3 in Resources */,
 				7367DD3A25EF778800966689 /* koenigsegg_agera_r.mp3 in Resources */,
 				0BF87E4A2626354000DB205B /* astonmartin_vulcan.mp3 in Resources */,
 				73D7F36D25BC9A2F001161A6 /* Preview Assets.xcassets in Resources */,
@@ -550,7 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Vroom Vroom/Preview Content\"";
-				DEVELOPMENT_TEAM = G85A29FYUQ;
+				DEVELOPMENT_TEAM = QFF9C45483;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Vroom Vroom/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

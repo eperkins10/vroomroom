@@ -37,6 +37,7 @@ public enum Manufacturer : String {
     case nissan = "Nissan"
     case porshe = "Porshe"
     case astonMartin = "Aston Martin"
+    case toyota = "Toyota"
     
 }
 
@@ -87,7 +88,8 @@ public class Car {
                           Car(carModel: "Regera", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .koenigsegg, urlName: "koenigsegg_regera"),
                           Car(carModel: "CCX", carOrigin: .swiss, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .koenigsegg, urlName: "koenigsegg_ccx"),
                           Car(carModel: "Vulcan", carOrigin: .uk, driveType: .twoWheelDrive, cylinderCount: 12, manufacturer: .astonMartin, urlName: "astonmartin_vulcan"),
-                          Car(carModel: "720S", carOrigin: .uk, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .mclaren, urlName: "mclaren_720s")
+                          Car(carModel: "720S", carOrigin: .uk, driveType: .twoWheelDrive, cylinderCount: 8, manufacturer: .mclaren, urlName: "mclaren_720s"),
+                          Car(carModel: "MK4 Supra" , carOrigin: .japanese, driveType: .twoWheelDrive, cylinderCount: 6, manufacturer: .toyota, urlName: "toyota_supra_mk4")
     ]
     
     
