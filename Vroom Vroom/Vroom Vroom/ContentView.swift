@@ -49,8 +49,10 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
-            } .navigationBarTitle("Vroom Vroom")
-        }
+            } .navigationBarTitle("Main Menu")
+            
+        }.accentColor(.black)
+        
         
     }
     
